@@ -13,7 +13,7 @@ public class SmokeDetectedCharacteristic extends EnumCharacteristic
   private final SmokeSensor smokeSensor;
 
   public SmokeDetectedCharacteristic(SmokeSensor smokeSensor) {
-    super("00000076-0000-1000-8000-0026BB765291", false, true, "Smoke Detected", 1);
+    super("00000076-0000-1000-8000-0026BB765291", false, true, null, 1);
     this.smokeSensor = smokeSensor;
   }
 

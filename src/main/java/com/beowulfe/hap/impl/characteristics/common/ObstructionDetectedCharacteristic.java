@@ -18,7 +18,7 @@ public class ObstructionDetectedCharacteristic extends BooleanCharacteristic
       Supplier<CompletableFuture<Boolean>> getter,
       Consumer<HomekitCharacteristicChangeCallback> subscriber,
       Runnable unsubscriber) {
-    super("00000024-0000-1000-8000-0026BB765291", false, true, "Obstruction Detected");
+    super("00000024-0000-1000-8000-0026BB765291", false, true, null);
     this.getter = getter;
     this.subscriber = subscriber;
     this.unsubscriber = unsubscriber;

@@ -12,15 +12,7 @@ public class SaturationCharacteristic extends FloatCharacteristic
   private final ColorfulLightbulb lightbulb;
 
   public SaturationCharacteristic(ColorfulLightbulb lightbulb) {
-    super(
-        "0000002F-0000-1000-8000-0026BB765291",
-        true,
-        true,
-        "Adjust saturation of the light",
-        0,
-        100,
-        1,
-        "%");
+    super("0000002F-0000-1000-8000-0026BB765291", true, true, null, 0, 100, 1, "%");
     this.lightbulb = lightbulb;
   }
 

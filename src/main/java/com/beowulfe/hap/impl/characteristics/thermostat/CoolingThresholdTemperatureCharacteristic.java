@@ -9,11 +9,7 @@ public class CoolingThresholdTemperatureCharacteristic extends AbstractTemperatu
   private final CoolingThermostat thermostat;
 
   public CoolingThresholdTemperatureCharacteristic(CoolingThermostat thermostat) {
-    super(
-        "0000000D-0000-1000-8000-0026BB765291",
-        true,
-        "Temperature above which cooling will be active",
-        thermostat);
+    super("0000000D-0000-1000-8000-0026BB765291", true, null, thermostat);
     this.thermostat = thermostat;
   }
 

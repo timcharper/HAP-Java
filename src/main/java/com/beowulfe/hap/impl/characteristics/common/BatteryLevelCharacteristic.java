@@ -22,7 +22,7 @@ public class BatteryLevelCharacteristic extends IntegerCharacteristic
       Supplier<CompletableFuture<Integer>> getter,
       Consumer<HomekitCharacteristicChangeCallback> subscriber,
       Runnable unsubscriber) {
-    super("00000068-0000-1000-8000-0026BB765291", false, true, "Battery Level", 0, 100, "%");
+    super("00000068-0000-1000-8000-0026BB765291", false, true, null, 0, 100, "%");
     this.getter = getter;
     this.subscriber = subscriber;
     this.unsubscriber = unsubscriber;

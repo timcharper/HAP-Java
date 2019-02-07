@@ -42,7 +42,7 @@ public abstract class BaseCharacteristic<T> implements Characteristic {
    */
   public BaseCharacteristic(
       String type, String format, boolean isWritable, boolean isReadable, String description) {
-    if (type == null || format == null || description == null) {
+    if (type == null || format == null) {
       throw new NullPointerException();
     }
 
@@ -99,8 +99,10 @@ public abstract class BaseCharacteristic<T> implements Characteristic {
                       .add("type", shortType)
                       .add("perms", perms.build())
                       .add("format", format)
-                      .add("ev", false)
-                      .add("description", description);
+                      .add("ev", false);
+              if (description != null) {
+                builder.add("description", description);
+              }
               setJsonValue(builder, value);
               return builder;
             });

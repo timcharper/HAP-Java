@@ -13,7 +13,7 @@ public class ContactSensorStateCharacteristic extends EnumCharacteristic
   private final ContactSensor contactSensor;
 
   public ContactSensorStateCharacteristic(ContactSensor contactSensor) {
-    super("0000006A-0000-1000-8000-0026BB765291", false, true, "Contact State", 1);
+    super("0000006A-0000-1000-8000-0026BB765291", false, true, null, 1);
     this.contactSensor = contactSensor;
   }
 

@@ -13,7 +13,7 @@ public class CurrentDoorStateCharacteristic extends EnumCharacteristic
   private final GarageDoor door;
 
   public CurrentDoorStateCharacteristic(GarageDoor door) {
-    super("00000032-0000-1000-8000-0026BB765291", true, true, "Target Door State", 1);
+    super("00000032-0000-1000-8000-0026BB765291", true, true, null, 1);
     this.door = door;
   }
 

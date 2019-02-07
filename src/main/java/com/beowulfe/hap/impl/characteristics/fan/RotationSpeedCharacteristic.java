@@ -12,7 +12,7 @@ public class RotationSpeedCharacteristic extends IntegerCharacteristic
   private final Fan fan;
 
   public RotationSpeedCharacteristic(Fan fan) {
-    super("00000029-0000-1000-8000-0026BB765291", true, true, "Rotation speed", 0, 100, "%");
+    super("00000029-0000-1000-8000-0026BB765291", true, true, null, 0, 100, "%");
     this.fan = fan;
   }
 

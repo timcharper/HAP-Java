@@ -13,7 +13,7 @@ public class CarbonMonoxideDetectedCharacteristic extends EnumCharacteristic
   private final CarbonMonoxideSensor carbonMonoxideSensor;
 
   public CarbonMonoxideDetectedCharacteristic(CarbonMonoxideSensor carbonMonoxideSensor) {
-    super("00000069-0000-1000-8000-0026BB765291", false, true, "Carbon Monoxide Detected", 1);
+    super("00000069-0000-1000-8000-0026BB765291", false, true, null, 1);
     this.carbonMonoxideSensor = carbonMonoxideSensor;
   }
 

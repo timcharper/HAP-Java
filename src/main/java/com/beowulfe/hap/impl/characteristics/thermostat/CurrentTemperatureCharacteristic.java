@@ -9,7 +9,7 @@ public class CurrentTemperatureCharacteristic extends AbstractTemperatureCharact
   private final TemperatureSensor sensor;
 
   public CurrentTemperatureCharacteristic(TemperatureSensor thermostat) {
-    super("00000011-0000-1000-8000-0026BB765291", false, "Current Temperature", thermostat);
+    super("00000011-0000-1000-8000-0026BB765291", false, null, thermostat);
     this.sensor = thermostat;
   }
 

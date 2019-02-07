@@ -13,7 +13,7 @@ public class SecuritySystemAlarmTypeCharacteristic extends EnumCharacteristic
   private final SecuritySystem securitySystem;
 
   public SecuritySystemAlarmTypeCharacteristic(SecuritySystem securitySystem) {
-    super("0000008E-0000-1000-8000-0026BB765291", false, true, "Security system alarm type", 1);
+    super("0000008E-0000-1000-8000-0026BB765291", false, true, null, 1);
     this.securitySystem = securitySystem;
   }
 

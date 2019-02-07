@@ -11,7 +11,7 @@ public class ValveTypeCharacteristic extends EnumCharacteristic implements Event
   private final Valve valve;
 
   public ValveTypeCharacteristic(Valve valve) {
-    super("000000D5-0000-1000-8000-0026BB765291", false, true, "Valve Type", 3);
+    super("000000D5-0000-1000-8000-0026BB765291", false, true, null, 3);
     this.valve = valve;
   }
 

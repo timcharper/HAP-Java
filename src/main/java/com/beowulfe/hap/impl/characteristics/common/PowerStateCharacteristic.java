@@ -21,7 +21,7 @@ public class PowerStateCharacteristic extends BooleanCharacteristic
       ExceptionalConsumer<Boolean> setter,
       Consumer<HomekitCharacteristicChangeCallback> subscriber,
       Runnable unsubscriber) {
-    super("00000025-0000-1000-8000-0026BB765291", true, true, "Turn on and off");
+    super("00000025-0000-1000-8000-0026BB765291", true, true, null);
     this.getter = getter;
     this.setter = setter;
     this.subscriber = subscriber;

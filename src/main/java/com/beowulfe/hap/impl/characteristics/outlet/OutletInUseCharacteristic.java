@@ -12,7 +12,7 @@ public class OutletInUseCharacteristic extends BooleanCharacteristic
   private final Outlet outlet;
 
   public OutletInUseCharacteristic(Outlet outlet) {
-    super("00000026-0000-1000-8000-0026BB765291", false, true, "The outlet is in use");
+    super("00000026-0000-1000-8000-0026BB765291", false, true, null);
     this.outlet = outlet;
   }
 

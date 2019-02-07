@@ -12,14 +12,7 @@ public class CurrentVerticalTiltAngleCharacteristic extends IntegerCharacteristi
   private final VerticalTiltingWindowCovering windowCovering;
 
   public CurrentVerticalTiltAngleCharacteristic(VerticalTiltingWindowCovering windowCovering) {
-    super(
-        "0000006E-0000-1000-8000-0026BB765291",
-        false,
-        true,
-        "The current vertical tilt angle",
-        -90,
-        90,
-        "Arc Degree");
+    super("0000006E-0000-1000-8000-0026BB765291", false, true, null, -90, 90, "Arc Degree");
     this.windowCovering = windowCovering;
   }
 

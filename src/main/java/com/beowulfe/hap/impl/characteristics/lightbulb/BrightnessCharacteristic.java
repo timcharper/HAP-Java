@@ -12,14 +12,7 @@ public class BrightnessCharacteristic extends IntegerCharacteristic
   private final DimmableLightbulb lightbulb;
 
   public BrightnessCharacteristic(DimmableLightbulb lightbulb) {
-    super(
-        "00000008-0000-1000-8000-0026BB765291",
-        true,
-        true,
-        "Adjust brightness of the light",
-        0,
-        100,
-        "%");
+    super("00000008-0000-1000-8000-0026BB765291", true, true, null, 0, 100, "%");
     this.lightbulb = lightbulb;
   }
 

@@ -9,7 +9,7 @@ public class TargetTemperatureCharacteristic extends AbstractTemperatureCharacte
   private final BasicThermostat thermostat;
 
   public TargetTemperatureCharacteristic(BasicThermostat thermostat) {
-    super("00000035-0000-1000-8000-0026BB765291", true, "Target Temperature", thermostat);
+    super("00000035-0000-1000-8000-0026BB765291", true, null, thermostat);
     this.thermostat = thermostat;
   }
 

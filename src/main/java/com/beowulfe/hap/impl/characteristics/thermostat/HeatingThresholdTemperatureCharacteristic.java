@@ -9,11 +9,7 @@ public class HeatingThresholdTemperatureCharacteristic extends AbstractTemperatu
   private final HeatingThermostat thermostat;
 
   public HeatingThresholdTemperatureCharacteristic(HeatingThermostat thermostat) {
-    super(
-        "00000012-0000-1000-8000-0026BB765291",
-        true,
-        "Temperature below which heating will be active",
-        thermostat);
+    super("00000012-0000-1000-8000-0026BB765291", true, null, thermostat);
     this.thermostat = thermostat;
   }
 

@@ -12,7 +12,7 @@ public class OccupancyDetectedStateCharacteristic extends BooleanCharacteristic
   private final OccupancySensor occupancySensor;
 
   public OccupancyDetectedStateCharacteristic(OccupancySensor occupancySensor) {
-    super("00000071-0000-1000-8000-0026BB765291", false, true, "Occupancy Detected");
+    super("00000071-0000-1000-8000-0026BB765291", false, true, null);
     this.occupancySensor = occupancySensor;
   }
 

@@ -11,15 +11,7 @@ public class HueCharacteristic extends FloatCharacteristic implements EventableC
   private final ColorfulLightbulb lightbulb;
 
   public HueCharacteristic(ColorfulLightbulb lightbulb) {
-    super(
-        "00000013-0000-1000-8000-0026BB765291",
-        true,
-        true,
-        "Adjust hue of the light",
-        0,
-        360,
-        1,
-        "arcdegrees");
+    super("00000013-0000-1000-8000-0026BB765291", true, true, null, 0, 360, 1, "arcdegrees");
     this.lightbulb = lightbulb;
   }
 

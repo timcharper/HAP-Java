@@ -18,14 +18,7 @@ public class RemainingDurationCharacteristic extends IntegerCharacteristic
       Supplier<CompletableFuture<Integer>> getter,
       Consumer<HomekitCharacteristicChangeCallback> subscriber,
       Runnable unsubscriber) {
-    super(
-        "000000D4-0000-1000-8000-0026BB765291",
-        false,
-        true,
-        "Remaining Duration",
-        0,
-        3600,
-        "seconds");
+    super("000000D4-0000-1000-8000-0026BB765291", false, true, null, 0, 3600, "seconds");
     this.getter = getter;
     this.subscriber = subscriber;
     this.unsubscriber = unsubscriber;

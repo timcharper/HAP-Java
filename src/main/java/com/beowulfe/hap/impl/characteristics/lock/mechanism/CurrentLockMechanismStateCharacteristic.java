@@ -12,7 +12,7 @@ public class CurrentLockMechanismStateCharacteristic extends EnumCharacteristic
   private final LockMechanism lock;
 
   public CurrentLockMechanismStateCharacteristic(LockMechanism lock) {
-    super("0000001D-0000-1000-8000-0026BB765291", false, true, "Current lock state", 3);
+    super("0000001D-0000-1000-8000-0026BB765291", false, true, null, 3);
     this.lock = lock;
   }
 

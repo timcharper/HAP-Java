@@ -13,7 +13,7 @@ public class TargetSecuritySystemStateCharacteristic extends EnumCharacteristic
   private final SecuritySystem securitySystem;
 
   public TargetSecuritySystemStateCharacteristic(SecuritySystem securitySystem) {
-    super("00000067-0000-1000-8000-0026BB765291", true, true, "Target security system state", 3);
+    super("00000067-0000-1000-8000-0026BB765291", true, true, null, 3);
     this.securitySystem = securitySystem;
   }
 

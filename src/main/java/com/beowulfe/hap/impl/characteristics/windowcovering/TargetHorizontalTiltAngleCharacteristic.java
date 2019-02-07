@@ -12,14 +12,7 @@ public class TargetHorizontalTiltAngleCharacteristic extends IntegerCharacterist
   private final HorizontalTiltingWindowCovering windowCovering;
 
   public TargetHorizontalTiltAngleCharacteristic(HorizontalTiltingWindowCovering windowCovering) {
-    super(
-        "0000007B-0000-1000-8000-0026BB765291",
-        true,
-        true,
-        "The target horizontal tilt angle",
-        -90,
-        90,
-        "Arc Degree");
+    super("0000007B-0000-1000-8000-0026BB765291", true, true, null, -90, 90, "Arc Degree");
     this.windowCovering = windowCovering;
   }
 

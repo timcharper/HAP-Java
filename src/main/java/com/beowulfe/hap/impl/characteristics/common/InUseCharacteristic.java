@@ -17,7 +17,7 @@ public class InUseCharacteristic extends BooleanCharacteristic implements Eventa
       Supplier<CompletableFuture<Boolean>> getter,
       Consumer<HomekitCharacteristicChangeCallback> subscriber,
       Runnable unsubscriber) {
-    super("000000D2-0000-1000-8000-0026BB765291", false, true, "InUse");
+    super("000000D2-0000-1000-8000-0026BB765291", false, true, null);
     this.getter = getter;
     this.subscriber = subscriber;
     this.unsubscriber = unsubscriber;

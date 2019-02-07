@@ -12,7 +12,7 @@ public class MotionDetectedStateCharacteristic extends BooleanCharacteristic
   private final MotionSensor motionSensor;
 
   public MotionDetectedStateCharacteristic(MotionSensor motionSensor) {
-    super("00000022-0000-1000-8000-0026BB765291", false, true, "Motion Detected");
+    super("00000022-0000-1000-8000-0026BB765291", false, true, null);
     this.motionSensor = motionSensor;
   }
 

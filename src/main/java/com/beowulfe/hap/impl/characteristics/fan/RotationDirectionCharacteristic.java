@@ -13,7 +13,7 @@ public class RotationDirectionCharacteristic extends EnumCharacteristic
   private final Fan fan;
 
   public RotationDirectionCharacteristic(Fan fan) {
-    super("00000028-0000-1000-8000-0026BB765291", true, true, "Rotation Direction", 1);
+    super("00000028-0000-1000-8000-0026BB765291", true, true, null, 1);
     this.fan = fan;
   }
 

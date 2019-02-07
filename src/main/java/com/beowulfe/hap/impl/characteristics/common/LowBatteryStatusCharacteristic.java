@@ -18,7 +18,7 @@ public class LowBatteryStatusCharacteristic extends BooleanCharacteristic
       Supplier<CompletableFuture<Boolean>> getter,
       Consumer<HomekitCharacteristicChangeCallback> subscriber,
       Runnable unsubscriber) {
-    super("00000079-0000-1000-8000-0026BB765291", false, true, "Status Low Battery");
+    super("00000079-0000-1000-8000-0026BB765291", false, true, null);
     this.getter = getter;
     this.subscriber = subscriber;
     this.unsubscriber = unsubscriber;

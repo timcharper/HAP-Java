@@ -17,7 +17,7 @@ public class CurrentHeatingCoolingModeCharacteristic extends EnumCharacteristic
   private final BasicThermostat thermostat;
 
   public CurrentHeatingCoolingModeCharacteristic(BasicThermostat thermostat) {
-    super("0000000F-0000-1000-8000-0026BB765291", false, true, "Current Mode", 2);
+    super("0000000F-0000-1000-8000-0026BB765291", false, true, null, 2);
     this.thermostat = thermostat;
   }
 

@@ -13,7 +13,7 @@ public class TargetHeatingCoolingModeCharacteristic extends EnumCharacteristic
   private final BasicThermostat thermostat;
 
   public TargetHeatingCoolingModeCharacteristic(BasicThermostat thermostat) {
-    super("00000033-0000-1000-8000-0026BB765291", true, true, "Target Mode", 3);
+    super("00000033-0000-1000-8000-0026BB765291", true, true, null, 3);
     this.thermostat = thermostat;
   }
 

@@ -20,7 +20,7 @@ public class ActiveCharacteristic extends BooleanCharacteristic implements Event
       ExceptionalConsumer<Boolean> setter,
       Consumer<HomekitCharacteristicChangeCallback> subscriber,
       Runnable unsubscriber) {
-    super("000000B0-0000-1000-8000-0026BB765291", true, true, "Active");
+    super("000000B0-0000-1000-8000-0026BB765291", true, true, null);
     this.getter = getter;
     this.setter = setter;
     this.subscriber = subscriber;
