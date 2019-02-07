@@ -12,6 +12,18 @@ import java.util.concurrent.CompletableFuture;
 public interface BatteryStatusAccessory {
 
   /**
+   * Queries if this accessory actually supports battery status.
+   *
+   * <p>This is useful to build a single concrete class that can optionally and dynamically support
+   * battery status or not, depending on the backing object.
+   *
+   * @return if the BatteryStatusAccessory interface should be used
+   */
+  default boolean supportsBatteryStatus() {
+    return true;
+  }
+
+  /**
    * Queries if the device battery level is low; returning a value of true will cause a low-battery
    * status to appear in Home for the device.
    *

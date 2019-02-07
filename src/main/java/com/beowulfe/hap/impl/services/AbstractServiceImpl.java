@@ -64,11 +64,13 @@ abstract class AbstractServiceImpl implements Service {
       // If battery operated accessory then add LowBatteryStatusAccessory
       if (accessory instanceof BatteryStatusAccessory) {
         BatteryStatusAccessory batteryStatusAccessory = (BatteryStatusAccessory) accessory;
-        addCharacteristic(
-            new LowBatteryStatusCharacteristic(
-                batteryStatusAccessory::getLowBatteryState,
-                batteryStatusAccessory::subscribeLowBatteryState,
-                batteryStatusAccessory::unsubscribeLowBatteryState));
+        if (batteryStatusAccessory.supportsBatteryStatus()) {
+          addCharacteristic(
+              new LowBatteryStatusCharacteristic(
+                  batteryStatusAccessory::getLowBatteryState,
+                  batteryStatusAccessory::subscribeLowBatteryState,
+                  batteryStatusAccessory::unsubscribeLowBatteryState));
+        }
       }
     }
   }
